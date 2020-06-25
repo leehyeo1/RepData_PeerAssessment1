@@ -83,7 +83,7 @@ head(total)
 hist(total$steps, xlab = "Total steps", main = "Total number of steps taken per day", col = "red")
 ```
 
-![](PA1_template_files/figure-html/create histogram-1.png)<!-- -->
+![](PA1_template_files/figure-html/histogram-1.png)<!-- -->
 
  - To calculate the mean and median of total number of steps taken per day, we can simply use `mean` and `median` of **total** data we created above.
  - In addition, I used `paste` function to create a sentence to tell what those numbers are representing
@@ -134,7 +134,7 @@ g <- ggplot(avg, aes(x = interval, y = steps))
 g + geom_line() + labs(title = "Daily activity pattern", x = "5-minute interval", y = "Avg. number of steps")
 ```
 
-![](PA1_template_files/figure-html/creating plot-1.png)<!-- -->
+![](PA1_template_files/figure-html/creatingplot-1.png)<!-- -->
 
  - Let's find out which 5-minute interval contains the maximum number of steps.
  - We use `which.max()` function to find maximum value of averaged steps.
@@ -297,4 +297,4 @@ g + geom_line() + facet_wrap(. ~ wday2, nrow = 2) + labs(title = "Avg. number of
                                                          x = "5-min interval", y = "Avg. number of steps") 
 ```
 
-![](PA1_template_files/figure-html/multi panel-1.png)<!-- -->
+![](PA1_template_files/figure-html/multipanel-1.png)<!-- -->
